@@ -1,0 +1,47 @@
+// Animations
+.circle-enter-active {
+  animation: circle-in 0.2s;
+}
+.circle-leave-active {
+  animation: circle-in 0.2s reverse;
+}
+
+@keyframes circle-in {
+  0% {
+    clip-path: circle(0% at 30px 30px);
+  }
+  100% {
+    clip-path: circle(100% at 30px 30px);
+  }
+}
+
+@media (min-width: 960px) {
+  @keyframes circle-in {
+    0% {
+      clip-path: circle(0% at calc((100vw - 900px) / 2 + 30px) 30px);
+    }
+    100% {
+      clip-path: circle(100% at calc((100vw - 900px) / 2 + 30px) 30px);
+    }
+  }
+}
+@media (min-width: 1264px) {
+  @keyframes circle-in {
+    0% {
+      clip-path: circle(0% at calc((100vw - 1185px) / 2 + 30px) 30px);
+    }
+    100% {
+      clip-path: circle(100% at calc((100vw - 1185px) / 2 + 30px) 30px);
+    }
+  }
+}
+@media (min-width: 1904px) {
+  @keyframes circle-in {
+    0% {
+      clip-path: circle(0% at calc((100vw - 1785px) / 2 + 30px) 30px);
+    }
+    100% {
+      clip-path: circle(100% at calc((100vw - 1785px) / 2 + 30px) 30px);
+    }
+  }
+}

@@ -1,6 +1,11 @@
 <template lang="pug">
   v-app
-    nuxt
+    Header
+    v-main
+      nuxt
+    v-footer(app absolute)
+      v-container
+        .d-flex.center uppercase
 </template>
 
 <script>

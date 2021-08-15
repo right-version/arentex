@@ -1,0 +1,15 @@
+// colors
+$anchor: #9c27b0;
+$primarylight: #e1bee7;
+$primary: #9c27b0;
+$primarydark: #6a1b9a;
+$secondarylight: #dcedc8;
+$secondary: #8bc34a;
+$secondarydark: #558b2f;
+
+// mixins
+@mixin mw($width, $type: max) {
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}
